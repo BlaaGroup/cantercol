@@ -1,0 +1,261 @@
+<div class="div-float-buttons">
+    <a class="btn button-float green" href="https://wa.link/qu97ib" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a class="btn button-float yellow" data-toggle="modal" data-target="#modalContact"><i class="fas fa-paper-plane"></i></a>
+</div>
+<section class="sections home" id="Home">
+    <div class="background-section"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col slider-home">
+                <div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 div-question">
+                            <h3 class="text text-question-slider">¿quienes somos?</h3>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 div-answer">
+                            <!-- <p class="text text-tittle-answer">misión</p> -->
+                            <p class="text text-description-answer">CANTERCOL S.A.S Somos, operadores mineros de materiales pétreos de arrastre y de canteras. Nuestro equipo está totalmente comprometido con producir y entregar los mejores productos triturados y de más alta calidad acorde a las normas Nacionales e Internacionales, con seguridad y responsabilidad, con servicios para los departamentos de Cundinamarca y Boyacá (Colombia).. Identificamos los valores tanto éticos como corporativos de nuestra compañía como propios, y estamos absolutamente motivados a ser los mejores en este sector de la minería Colombiana. 
+                                <br>Nuestro indeclinable propósito es crear con responsabilidad, creatividad y servicio, valor agregado y beneficios  tanto económicos como sociales  las comunidades del entorno de nuestras explotaciones, como para nuestros colaboradores, trabajadores,  socios,  y en general para nuestro país.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 div-question">
+                            <h3 class="text text-question-slider">Misión</h3>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 div-answer">
+                            <!-- <p class="text text-tittle-answer">misión</p> -->
+                            <p class="text text-description-answer">Con el liderazgo, participación de personas comprometidas y eficientemente productivas, alcanzamos extraordinarios y predecibles resultados operativos y comerciales, basados en la observancia y cumplimiento estricto en la preservación y permanente obtención  de estándares óptimos en salud y seguridad industrial, medio ambiente sostenible, excelencia en las relaciones comunitarias, los mejores indicadores de calidad de productos y eficiencia explotadora minera.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 div-question">
+                            <h3 class="text text-question-slider">Visión</h3>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 div-answer">
+                            <!-- <p class="text text-tittle-answer">misión</p> -->
+                            <p class="text text-description-answer">En un término no mayor a un lustro, trabajando por el desarrollo de Colombia, transformaremos retos en excelentes éxitos y seremos ejemplo en nuestro país de <strong>excelencia, pulcritud y desarrollo minero para la explotación y comercialización de materiales pétreos de arrastre y de canteras.</strong> </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section *ngIf="this.ListProcess" id="Procesos" class="sections process">
+    <div class="container-md">
+        <div class="row">
+            <div class="col-12">
+                <div class="div-text-tittle">
+                    <div class="div-back"></div>
+                    <h2 class="text text-tittle-section">procesos</h2>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 div-process" *ngFor="let process of this.ListProcess;let i = index;">
+                <div [ngClass]="{'yellow': i==0, 'blue': i==1, 'green': i==2}" class="line-process"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <img class="img-process" src="{{process.image_process}}" alt="">
+                        <p class="text text-name-process">{{process.name_process}}</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="text text-description-process">{{process.description_process}}</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sections make_difference" id="Valores">
+    <div class="line-process"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 co div-video">
+                <img src="assets/images/img-valores.jpg" class="img-fluid image-video" alt="">
+                <div class="line-footer-img"></div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 co div-texto">
+                <h3 class="text text-tittle-difference">¿que nos diferencia?</h3>
+                <i class="text text-description-difference-2 ">“Talento humano como factor diferencial en el sector de la Minería a nivel nacional”</i>
+                <p class="text text-description-difference">Todos conocemos a personas talentosas y en realidad todos somos talentosos, pero en algunas personas es más fácil observar el desarrollo de ese talento, a través de la aplicación de sus habilidades o competencias en su ámbito laboral, personal o profesional es por esto que En nuestra empresa CANTERCOL S.A.S, creemos fielmente que el recurso de trabajo más preciado son nuestros colaboradores, aquellas personas que hacen que nuestro crecimiento sea exponencial, respondiendo así a nuestra misión y visión en pro de la excelencia, pulcritud y la participación para así lograr ser los mejores en el sector de la minería Colombiana. 
+                    
+                    </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="sections products" id="Productos">
+    <div class="line-products"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text text-tittle-products">productos</h3>
+            </div>
+        </div>
+        <div class="row" *ngIf="this.Listproducts">
+            <div class="col-12 ">
+                <div class="row">
+                    <div class="col-12 slider-products">
+                        <div *ngFor="let product of this.Listproducts;let i = index;">
+                            <div class="row">
+                                <div class="col-12 div-product" id="product-{{i}}">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="{{product.image_product}}" class="img-product" alt="">
+                                            <p class="text text-name-product">{{product.name_product}}</p>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="text text-description-product">{{product.description_product}}</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-show-product" (click)="showProduct(i);"><i
+                                            id="icon-product-{{i}}" class="fas icon-show-product fa-plus"></i></button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slider-dots"></div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="sections certifications" id="Certificaciones">
+    <div class="line-process"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <h3 class="text text-tittle-certifications">Certificaciones</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-3 div-logo">
+           <img src="assets/images/certifications/logo1.png" class="img-fluid img-certification" alt="">
+           <p class="text text-logo-certifications"></p>
+        </div>
+        <div class="col-3 div-logo">
+            <img src="assets/images/certifications/logo2.png" class="img-fluid img-certification" alt="">
+            <p class="text text-logo-certifications"></p>
+         </div>
+         <div class="col-3 div-logo">
+            <img src="assets/images/certifications/logo3.png" class="img-fluid img-certification" alt="">
+            <p class="text text-logo-certifications"></p>
+         </div>
+         <div class="col-3 div-logo">
+            <img src="assets/images/certifications/logo4.png" class="img-fluid img-certification" alt="">
+            <p class="text text-logo-certifications"></p>
+         </div>
+      </div>
+
+    </div>
+</section>
+<section class="sections location" id="Ubicacion">
+    <div class="line-location"></div>
+    <div class="container div-map-container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-9 div-mapa">
+                <div class="line-map"></div>
+                <div class="map-container">
+                    <div class="map-frame">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 div-options">
+                
+                <ul class="list-group list-group-flush navbar-location">
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#Home">Home<i class="fas fa-angle-right"></i></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#Procesos">procesos<i class="fas fa-angle-right"></i></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#Valores">valores<i class="fas fa-angle-right"></i></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#Productos">productos<i class="fas fa-angle-right"></i></a>
+                    </li>
+                  
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<!-- Modal -->
+<div class="modal fade" id="modalContact" tabindex="-1" aria-labelledby="modalContactLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+         <div class="row">
+             <div class="col-12">
+                 <h3 class="text text-tittle-contact-form">contacto</h3>
+             </div>
+             <div class="col-12 mt-3">
+                <form *ngIf="!this.FormSend" class="form-cantercol" [formGroup]="this.FormContact" (submit)="saveForm()">
+                    <div class="form-group">
+                      <label for="nombre" class="label-cantercol">nombres</label>
+                      <input formControlName="names" type="text" class="form-control form-control-cantercol" id="nombre" >
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="label-cantercol">email</label>
+                        <input formControlName="email" type="email" class="form-control form-control-cantercol" id="email" >
+                      </div>
+                      <div class="form-group">
+                        <label for="telefono" class="label-cantercol">teléfono</label>
+                        <input formControlName="phone" type="number" class="form-control form-control-cantercol" id="telefono" >
+                      </div>
+                      <div class="form-group">
+                        <label for="productos" class="label-cantercol">producto</label>
+                        <div class="box-select">
+                            <select formControlName="product" class="form-control form-select-cantercol" id="productos">
+                              <option value="" selected>Seleccione...</option>
+                              <option *ngFor="let product of this.Listproducts" value="{{product.name_product}}">{{product.name_product}}</option>
+                            </select>
+                          </div>
+  
+                      </div>
+                      <div class="form-group">
+                        <label class="label-cantercol" for="message">mensaje</label>
+                        <textarea formControlName="message" class="form-control" id="message" rows="5"></textarea>
+                      </div>
+                      <div *ngIf="this.FormContact.status=='INVALID' && this.errorForm" class="form-group">
+                       <p class="invalid-feedback">*Todos los campos son obligatorios.</p>
+                      </div>
+                    <button type="submit" class="btn btn-cantercol">Solicitar informacion</button>
+                  </form>
+                 
+             </div>
+             <div *ngIf="this.FormSend" class="col-12 div-thanks">
+                <h3 class="text tittle-sub">¡Gracias!</h3>
+                <p class="text text-name-thanks">{{this.FormContact.value.names}}</p>
+                <p class="text parrafo">Nos pondremos en contacto en el menor tiempo posible.</p>
+                
+              </div>
+         </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
